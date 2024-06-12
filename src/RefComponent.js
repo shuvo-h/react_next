@@ -23,8 +23,8 @@ const reducerMethod = (state,action) =>{
 const RefComponent = () => {
     const refVar = useRef();
     const refName = useRef();
-    // const [name1,setName1] = useState('')
-    // const [email,setEmail] = useState('')
+    // const [name1,setName1] = useState('');
+    // const [email,setEmail] = useState('');
     // const [user,setUser] = useState({
     //     name:"",
     //     email:"",
