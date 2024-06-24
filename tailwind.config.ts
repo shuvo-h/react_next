@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -54,11 +55,6 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      fontFamily: {
-        inter: ["var(--font-inter)", ...fontFamily.sans], // Use Inter for sans
-        roboto: ["var(--font-roboto)", ...fontFamily.serif], // Use Roboto for serif
-        lora: ["var(--font-lora)", ...fontFamily.mono],
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -73,6 +69,11 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+      },
+      fontFamily: {
+        primary: ["var(--font-inter)", ...fontFamily.sans], // Use Inter for sans
+        secondary: ["var(--font-roboto)", ...fontFamily.serif], // Use Roboto for serif
+        lora: ["var(--font-lora)", ...fontFamily.mono],
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
