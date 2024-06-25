@@ -1,8 +1,8 @@
 import React from 'react';
 
-const UserLautt = ({children}) => {
+const UserLautt = ({children}:any) => {
     return (
-        <div className='border border-4 m-4'>
+        <div className='border-4 m-4'>
             <h2>Sibng User Laout</h2>
             {children}
         </div>

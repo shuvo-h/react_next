@@ -1,12 +1,12 @@
 import React from 'react';
 
-const UserLautt = ({children}:any) => {
+const layout = ({children}) => {
     return (
         <div>
-            <h2>User Laout</h2>
+            <nav>Dashvboard nav  22</nav>
             {children}
         </div>
     );
 };
 
-export default UserLautt;
+export default layout;

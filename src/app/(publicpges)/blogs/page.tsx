@@ -1,11 +1,9 @@
 import React from 'react';
 
-const page = ({params}:any) => {
-    console.log(params);
-
+const page = () => {
     return (
         <div>
-            dynamic user {params.userId}
+            Blogs
         </div>
     );
 };
