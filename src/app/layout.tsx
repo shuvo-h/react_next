@@ -3,6 +3,7 @@ import { Inter,Roboto,Lora } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { cookies } from "next/headers";
+import RootProder from "@/provders/Prover";
 
 
 
@@ -34,11 +35,13 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
 
   return (
     <html lang="en">
-      <body className={cn(fontInter.variable,fontRoboto.variable,fontLora.className)}>
-        <div className="border-5 border m-3">
-         {children}
-        </div>
-      </body>
+      <RootProder>
+        <body className={cn(fontInter.variable,fontRoboto.variable,fontLora.className)}>
+          <div className="border-5 border m-3">
+          {children}
+          </div>
+        </body>
+      </RootProder>
     </html>
   );
 }

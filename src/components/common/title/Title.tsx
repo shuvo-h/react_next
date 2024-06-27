@@ -4,6 +4,7 @@ type TTitleProps = {
     title: string,
     className?: string,
     size?: "sm" | "md" | "lg",
+    tag: "h1" | "h2" | "h3" |"h4",
 }
 
 /*
@@ -16,9 +17,11 @@ type TTitleProps = {
     icons
 */
 
-const Title = ({size,title,className,}:TTitleProps) => {
+const Title = ({size,title,className,tag}:TTitleProps) => {
     const mainClassList = "font-primary text-gray-950  " + className;
     let mainSize = " text-2xl";
+
+    const Tag = tag ?? "h1";
 
     switch (size) {
         case "sm":
@@ -37,7 +40,7 @@ const Title = ({size,title,className,}:TTitleProps) => {
 
 
     return (
-        <h1 className={mainClassList + mainSize}>{title}</h1>
+        <Tag className={mainClassList + mainSize}>{title}</Tag>
     );
 };
 
